@@ -30,10 +30,10 @@ release = '9.10.2'
 
 # exclude_patterns is a list of patterns relative to the source directory
 # that match files and directories to ignore when looking for source files.
-tags.add('freenas')
-brand = u'FreeNAS®'
+tags.add('zfstor')
+brand = u'ZFStor'
 project = brand + u' User Guide'
-master_doc = 'freenas'
+master_doc = 'zfstor'
 extensions = [
     'sphinx.ext.ifconfig',
     'sphinxcontrib.httpdomain'
@@ -189,7 +189,7 @@ epub_publisher = u'iXsystems'
 epub_copyright = u'2011-2016, iXsystems'
 
 # The basename for the epub file. It defaults to the project name.
-epub_basename = u'freenas_userguide'
+epub_basename = u'zfstor_userguide'
 if tags.has('truenas'):
     epub_basename = u'truenas_userguide'
 
@@ -208,7 +208,7 @@ epub_scheme = 'URL'
 
 # The unique identifier of the text. This can be a ISBN number
 # or the project homepage.
-epub_identifier = 'freenas.org'
+epub_identifier = 'zfstor.org'
 
 # A unique identification for the text.
 epub_uid = release
@@ -272,8 +272,8 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('freenas', 'FreeNAS.tex', u'FreeNAS Documentation',
-   u'iXsystems', 'manual'),
+  ('zfstor', 'ZFStor.tex', u'ZFStor Documentation',
+   u'ZFStor', 'manual'),
 ]
 
 if tags.has('truenas'):
@@ -308,8 +308,8 @@ if tags.has('truenas'):
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'freenas', u'FreeNAS Documentation',
-     [u'iXsystems'], 1)
+    ('index', 'zfstor', u'ZFStor Documentation',
+     [u'ZFStor'], 1)
 ]
 
 # If true, show URL addresses after external links.
